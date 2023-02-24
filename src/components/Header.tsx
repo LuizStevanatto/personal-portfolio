@@ -2,6 +2,7 @@ import ProfilePic from "../public/perfil.png";
 import { useTheme } from "../services/theme/ThemeContext";
 
 import ProfileCV from "../public/documents/CV_Luiz_Stevanatto_Neto_Fev_23.pdf";
+import ProfileCVEng from "../public/documents/CV_Luiz_Stevanatto_Neto_Fev_23_Eng.pdf";
 
 export function Header() {
   const { changeTheme, theme } = useTheme();
@@ -45,6 +46,15 @@ export function Header() {
             <a href="https://github.com/LuizStevanatto" target="_blank">
               <i className="ri-github-line ri-lg font-xl text-title-color dark:text-dark-title-color duration-300 hover:text-first-color" />
             </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519991291264&text=Hello"
+              target="_blank"
+            >
+              <i className="ri-whatsapp-line ri-lg font-xl text-title-color dark:text-dark-title-color duration-300 hover:text-first-color" />
+            </a>
+            <a href="https://discord.gg/zUyDCseCx5" target="_blank">
+              <i className="ri-discord-line ri-lg font-xl text-title-color dark:text-dark-title-color duration-300 hover:text-first-color" />
+            </a>
           </ul>
         </div>
 
@@ -75,26 +85,21 @@ export function Header() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-y-4 xsm:flex-row items-center justify-center gap-x-4">
-          <a download="" href={ProfileCV} className="button font-medium">
-            Download CV
-            <i className="ri-download-line ri-lg" />
-          </a>
-
-          <div className="flex items-center justify-center gap-x-1 text-xl leading-none">
-            <a
-              href="https://api.whatsapp.com/send?phone=5519991291264&text=Hello, more information!"
-              target="_blank"
-              className="button button-gray"
-            >
-              <i className="ri-whatsapp-line w-5 h-5 text-black dark:text-white" />
+        <div className="flex flex-row gap-10 items-center justify-center">
+          <div className="flex flex-col gap-y-4 xsm:flex-row items-center justify-center gap-x-4">
+            <a download="" href={ProfileCV} className="button font-medium w-72">
+              Download CV - Portugês
+              <i className="ri-download-line ri-lg" />
             </a>
+          </div>
+          <div className="flex flex-col gap-y-4 xsm:flex-row items-center justify-center gap-x-4">
             <a
-              href="https://discordapp.com/channels/@me/463719816663138325"
-              target="_blank"
-              className="button button-gray"
+              download=""
+              href={ProfileCVEng}
+              className="button font-medium w-72"
             >
-              <i className="ri-discord-line w-5 h-5 text-black dark:text-white" />
+              Download CV - English
+              <i className="ri-download-line ri-lg" />
             </a>
           </div>
         </div>
