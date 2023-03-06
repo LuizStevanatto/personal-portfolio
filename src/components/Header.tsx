@@ -1,7 +1,7 @@
 import ProfilePic from "../public/perfil.png";
 import { useTheme } from "../services/theme/ThemeContext";
 
-import ProfileCV from "../public/documents/CV_Luiz_Stevanatto_Neto_Fev_23.pdf";
+import ProfileCV from "../public/documents/CV_Luiz_Stevanatto_Neto_Mar_23.pdf";
 import ProfileCVEng from "../public/documents/CV_Luiz_Stevanatto_Neto_Fev_23_Eng.pdf";
 
 export function Header() {
